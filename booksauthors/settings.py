@@ -140,15 +140,15 @@ LOGGING = {
             'level': 'DEBUG',
             'formatter': 'simple'
         },
-        # 'file': {
-        #     'class': 'logging.FileHandler',
-        #     'filename': 'project.log',
-        #     'level': 'INFO',
-        #     'formatter': 'verbose'
-        # },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'project.log',
+            'level': 'INFO',
+            'formatter': 'verbose'
+        },
     },
     'root': {
-        'handlers': ['console'],
+        'handlers': ['console', 'file'],
         'level': 'DEBUG',
     },
     'loggers': {
