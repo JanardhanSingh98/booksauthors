@@ -1,2 +1,0 @@
-[2020-11-06 19:13:01,522] 1604670181.5222704 run_with_reloader [INFO] django.utils.autoreload 1296988 140595752060736 [Watching for file changes with StatReloader]
-[2020-11-06 19:14:01,021] 1604670241.0211117 run_with_reloader [INFO] django.utils.autoreload 1297127 139946340558656 [Watching for file changes with StatReloader]

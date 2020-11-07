@@ -1,0 +1,759 @@
+{
+	"info": {
+		"_postman_id": "e44836f8-7346-4444-bdd3-4e4f06b1aa49",
+		"name": "booksauthors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/myapi/books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ti\": \"Basics of c++\",\n    \"desc\": \"this is the book for basics of c++.\",\n    \"au_id\": \"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapi/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapi",
+						"books"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "13",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET http://127.0.0.1:8000/myapi/books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ti\": \"Basics of c++\",\n    \"desc\": \"this is the book for basics of c++.\",\n    \"au_id\": \"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"books"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "13",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:07:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "459"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": [\n        {\n            \"bo_id\": 6740683,\n            \"ti\": \"Python for everybody\",\n            \"desc\": \"this is the book of basics of python.\",\n            \"au_id\": 1\n        },\n        {\n            \"bo_id\": 8421889,\n            \"ti\": \"Python for DataStructure\",\n            \"desc\": \"this book is for python datastructure.\",\n            \"au_id\": 2\n        },\n        {\n            \"bo_id\": 8402325,\n            \"ti\": \"Basics of c++\",\n            \"desc\": \"this is the book for basics of c++.\",\n            \"au_id\": 1\n        },\n        {\n            \"bo_id\": 9618527,\n            \"ti\": \"Master in c++\",\n            \"desc\": \"Advannce in c++\",\n            \"au_id\": 3\n        }\n    ],\n    \"status\": true,\n    \"rid\": \"1a95b85b20b711ebb023c14960b931a7\"\n}"
+				},
+				{
+					"name": "POST http://127.0.0.1:8000/myapi/books",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ti\": \"advance java\",\n    \"desc\": \"java book\",\n    \"au_id\": \"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"books"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "13",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:09:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": \"Book created with id : '5987216'\",\n    \"status\": true,\n    \"rid\": \"74ae618f20b711ebb023c14960b931a7\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/myapi/authors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"f_n\": \"kumar\",\n    \"l_n\": \"jordan\",\n    \"email\": \"jordan@jds.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapi/authors",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapi",
+						"authors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST http://127.0.0.1:8000/myapi/authors",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"f_n\": \"ramesh\",\n    \"l_n\": \"kumar\",\n    \"email\": \"ramesh@jds.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/authors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"authors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:11:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": \"author created with uuid [7773821]\",\n    \"status\": true,\n    \"rid\": \"bde79ef720b711ebb023c14960b931a7\"\n}"
+				},
+				{
+					"name": "GET http://127.0.0.1:8000/myapi/authors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"f_n\": \"kumar\",\n    \"l_n\": \"jordan\",\n    \"email\": \"jordan@jds.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/authors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"authors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:10:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "377"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": [\n        {\n            \"id\": 1,\n            \"au_id\": 8919675,\n            \"f_n\": \"janardhan\",\n            \"l_n\": \"singh\",\n            \"email\": \"janardhan@gmail.com\",\n            \"nt\": null\n        },\n        {\n            \"id\": 2,\n            \"au_id\": 9132678,\n            \"f_n\": \"Rahul\",\n            \"l_n\": \"kumar\",\n            \"email\": \"rahaulkumar@gmail.com\",\n            \"nt\": null\n        },\n        {\n            \"id\": 3,\n            \"au_id\": 7132576,\n            \"f_n\": \"vaibhav singh\",\n            \"l_n\": \"rajput\",\n            \"email\": \"vaibhavsingh@gmail.com\",\n            \"nt\": null\n        }\n    ],\n    \"status\": true,\n    \"rid\": \"959c6cd920b711ebb023c14960b931a7\"\n}"
+				},
+				{
+					"name": "POST http://127.0.0.1:8000/myapi/authors",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"f_n\": \"ramesh\",\n    \"l_n\": \"kumar\",\n    \"email\": \"ramesh@jds.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/authors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"authors"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:17:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1001,\n    \"message\": {\n        \"email\": [\n            \"author with this email already exists.\"\n        ]\n    },\n    \"status\": false,\n    \"rid\": \"7d0fcefe20b811ebb023c14960b931a7\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bo_id\": 2450966,\n    \"ti\": \"Master in c++\",\n    \"desc\": \"Advannce in c++\",\n    \"au_id\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapi",
+						"books",
+						"details"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "5987216"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bo_id\": 5987216,\n    \"ti\": \"Master in java\",\n    \"desc\": \"java\",\n    \"au_id\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"books",
+								"details"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "5987216"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:14:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": \"book with id '5987216' updated successfully\",\n    \"status\": true,\n    \"rid\": \"297da69420b811ebb023c14960b931a7\"\n}"
+				},
+				{
+					"name": "GET http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bo_id\": 2450966,\n    \"ti\": \"Master in c++\",\n    \"desc\": \"Advannce in c++\",\n    \"au_id\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"books",
+								"details"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "5987216"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:13:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "250"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": {\n        \"bo_id\": 5987216,\n        \"ti\": \"advance java\",\n        \"desc\": \"java book\",\n        \"au_id\": 3,\n        \"author_uuid\": 7132576,\n        \"first_name\": \"vaibhav singh\",\n        \"last_name\": \"rajput\",\n        \"email\": \"vaibhavsingh@gmail.com\"\n    },\n    \"status\": true,\n    \"rid\": \"fa54728a20b711ebb023c14960b931a7\"\n}"
+				},
+				{
+					"name": "DELETE http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bo_id\": 5987216,\n    \"ti\": \"Master in java\",\n    \"desc\": \"java\",\n    \"au_id\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/myapi/books/details?uuid=5987216",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"myapi",
+								"books",
+								"details"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "5987216"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Nov 2020 05:15:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1000,\n    \"message\": \"book with id '5987216' deleted successfully\",\n    \"status\": true,\n    \"rid\": \"41db1d6f20b811ebb023c14960b931a7\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
